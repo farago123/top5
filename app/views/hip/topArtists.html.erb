@@ -1,0 +1,15 @@
+<div class="row">
+  <h1> My Top 5 Artists </h1>
+    <% @artists.each do |artist| %>
+      <div class="well well-lg">
+        <% if artist.avatar_file_name != nil %>
+           <%= image_tag artist.avatar.url(:thumb), class: "img-responsive", id: "topArtistAvatars" %>
+        <% end %>
+        <h2><%= artist.name %></h2>
+	    <p><% "#{artist.rating}".to_i.times do %>
+	            <span class="glyphicon glyphicon-star"></span>
+           <% end %>
+        </p>	             
+     </div>
+    <% end %>
+</div>

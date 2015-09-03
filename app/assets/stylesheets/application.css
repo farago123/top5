@@ -195,3 +195,16 @@ input {color: black;}
 .well img {
   border-radius: 100px;
 }
+
+#showPageAvatar{
+  margin-left: 158px;
+  margin-bottom: 10px;
+}
+
+#mainNav {
+  margin-right: 105px;
+}
+
+#topArtistAvatars {
+  margin-left: 269px;
+}

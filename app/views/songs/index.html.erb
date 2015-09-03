@@ -12,7 +12,7 @@
       <div class="col-md-6">
         <div class="well">
           <h2><%= link_to song.name, song %></h2>
-          <h3>by <%= song.artist.name %></h3>
+          <h3>by <%= link_to song.artist.name, artist_path(song.artist) %></h3>
            <p>
             <% "#{song.rating}".to_i.times do %>
              <span class="glyphicon glyphicon-star"></span>
