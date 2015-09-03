@@ -42,6 +42,7 @@ class SongsController < ApplicationController
   # PATCH/PUT /songs/1
   # PATCH/PUT /songs/1.json
   def update
+    @artists = Artist.all
     respond_to do |format|
       if @song.update(song_params)
         format.html { redirect_to @song, notice: 'Song was successfully updated.' }

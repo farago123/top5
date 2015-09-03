@@ -55,6 +55,9 @@ class ArtistsController < ApplicationController
   # DELETE /artists/1.json
   def destroy
     @artist.destroy
+    @artist.songs.each do |song|
+      song.destroy
+    end
     respond_to do |format|
       format.html { redirect_to artists_url, notice: 'Artist was successfully destroyed.' }
       format.json { head :no_content }

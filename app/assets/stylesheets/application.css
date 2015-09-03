@@ -181,3 +181,17 @@ body {
 .white{
   color: white;
 }
+
+.well {
+  background: rgba(0,0,0,0.4);
+}
+
+input {color: black;}
+
+.glyphicon-star {
+  color: yellow;
+}
+
+.well img {
+  border-radius: 100px;
+}
